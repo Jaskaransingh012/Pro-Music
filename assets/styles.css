@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+header{    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #search{
+        background-color: rgb(38, 38, 38);
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        padding: 5px;
+    }
+}
+.container{
+    width: 100%;
+    padding: 0 20px;
+    .circles{
+        display: flex;
+        gap: 15px;
+    }
+}
+main{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        gap: 10px;
+
+    }
+}
+.sidebar{
+    padding-left: 10px;
+    background-color: rgb(13, 13, 13);
+    height: calc(100vh - 117px);
+    color: white;
+    font-family: "Beiruti", sans-serif;
+
+    .sidebar-heading{
+        word-spacing: 10px;
+    }
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .menu-head{
+        opacity: 0.5;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 10px 0;
+        position: relative;
+    }
+    div h5, div svg{
+        opacity: 0.5;
+        font-size: 18px;
+    }
+    div a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.home{
+    background-color: rgb(27, 23, 23);
+    border-right: 5px solid rgb(0, 189, 18);
+}
+.menu .home svg{
+    opacity: 1;
+}
+
+
+/* **** **** **** ***  *** *** ***  Main Body *** * * ** * * ** * * **  */
+
+
+.main-body{
+    color: white;
+    font-family: "Beiruti", sans-serif;
+    background-color: rgb(13, 13, 13);
+    height: calc(100vh - 117px);
+}
+.album-songs-container{
+    max-height: 310px;
+    overflow-y: scroll;
+}
+.album-songs-container::-webkit-scrollbar{
+    display: none;
+}
+.main-body::-webkit-scrollbar{
+    background: transparent;
+}
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.albums-head{
+    margin-bottom: 20px;
+}
+/* === Swiper==== */
+.swiper {
+    max-width: 980px;
+    width: 100%;
+    height: 300px;
+    color: white;
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{
+      font-size: 20px !important;
+      color: white;
+  }
+  .swiper-button-next,     .swiper-button-prev{
+      background-color: #5F5F56;
+      border-radius: 50%;
+      padding: 20px;
+      top: 59% !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 30%;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    max-height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  .swiper-button-next>svg{
+      width: 30px !important;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
