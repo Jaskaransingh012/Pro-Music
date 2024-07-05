@@ -1,6 +1,6 @@
 // === Swiper
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2.5,
+    slidesPerView: 3,
     spaceBetween: 10,
     loop: true,
     navigation: {

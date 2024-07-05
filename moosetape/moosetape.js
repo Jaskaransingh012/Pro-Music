@@ -100,6 +100,22 @@ function prev(){
     prevaudioGenerator() 
 }
 
+
+function searchEngine(){
+    let songName = document.querySelectorAll(".song-name")
+    songName.forEach(element => {
+        parent = element.parentElement.parentElement.parentElement.parentElement
+        parent.style.display = "none";
+        if(event.target.value == " " ) {
+            event.target.value = ""
+            // parent.style.display = "grid"
+        }
+        else if (element.innerText.toLowerCase().includes(event.target.value.toLowerCase())){
+                parent.style.display = "grid"
+        }
+    }); 
+}
+
 duration_setter();
 let song = document.querySelectorAll('.song')
 let currentlyPlayingImage = document.querySelector('.currently-playing-img')
